@@ -609,8 +609,9 @@ export default function App() {
             
             <div className="w-full lg:w-7/12">
               <h2 className="font-outfit text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">{t.hostHeading}</h2>
-              <div className="flex items-center gap-4 mb-10">
-                 <h3 className="font-outfit text-3xl text-indigo-600 font-bold">Zainab</h3>
+              <div className="flex flex-col pt-3">
+                 <h3 className="font-outfit text-3xl text-indigo-600 font-bold">Zainab Mam</h3>
+                 <p className="text-slate-500 font-medium">Founder, <span className="text-amber-500 font-bold">ICANLEARN</span></p>
               </div>
               
               <ul className="space-y-5 mb-10">
