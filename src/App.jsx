@@ -287,7 +287,7 @@ const CTAButton = ({ text, className = "", onClick }) => {
 
 // --- Main App ---
 
-const WHATSAPP_GROUP_URL = 'https://whatsapp.com/channel/0029VbC50EWLSmbfzdeXNi0O';
+const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/KjmwLFZIvqmBvaclY23sBn';
 
 export default function App() {
   const [lang, setLang] = useState('en');
@@ -876,12 +876,6 @@ export default function App() {
           </div>
           <p className="text-lg text-slate-300 mb-8">{t.footerTagline}</p>
           
-          <div className="flex justify-center items-center gap-6 mb-8 flex-wrap">
-            <a href="https://wa.me/919315447145" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 px-6 py-3 rounded-full text-white transition-colors font-medium">
-               <MessageCircle size={20} className="text-emerald-400" /> WhatsApp Support
-            </a>
-          </div>
-
           <div className="flex justify-center items-center gap-4 sm:gap-8 mb-8 text-sm flex-wrap">
             <a href="/privacy-policy.html" className="text-slate-400 hover:text-white transition-colors">Privacy Policy</a>
             <span className="text-slate-700">•</span>
@@ -903,17 +897,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Floating WhatsApp Button */}
-      <a 
-        href="https://wa.me/919315447145" 
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-[0_4px_20px_rgba(16,185,129,0.4)] hover:bg-emerald-600 hover:scale-110 transition-all z-50 flex items-center justify-center group"
-        aria-label="Contact on WhatsApp"
-      >
-        <MessageCircle size={32} className="group-hover:animate-bounce" />
-      </a>
     </div>
   );
 }
