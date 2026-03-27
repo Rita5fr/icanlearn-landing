@@ -369,6 +369,24 @@ export default function App() {
         setPaymentError(response.error?.description || 'Payment failed. Please try again.');
         setIsLoading(false);
       });
+
+      // Meta Pixel & GTM InitiateCheckout Tracking
+      if (typeof window !== 'undefined') {
+        if (window.fbq) {
+          window.fbq('track', 'InitiateCheckout', { currency: 'INR', value: 49.00 });
+        }
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'begin_checkout',
+            ecommerce: {
+              currency: 'INR',
+              value: 49.00,
+              items: [{ item_name: 'Spoken English Workshop', price: 49.00, quantity: 1 }]
+            }
+          });
+        }
+      }
+
       rzp.open();
     } catch (err) {
       setPaymentError(err.message || 'Something went wrong. Please try again.');
