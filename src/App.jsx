@@ -335,20 +335,10 @@ export default function App() {
           setIsSubmitted(true);
           setIsLoading(false);
 
-          // Meta Pixel & GTM Purchase Tracking
+          // Meta Pixel Purchase Tracking
           if (typeof window !== 'undefined') {
             if (window.fbq) {
               window.fbq('track', 'Purchase', { currency: 'INR', value: 49.00 });
-            }
-            if (window.dataLayer) {
-              window.dataLayer.push({
-                event: 'purchase',
-                ecommerce: {
-                  currency: 'INR',
-                  value: 49.00,
-                  items: [{ item_name: 'Spoken English Workshop', price: 49.00, quantity: 1 }]
-                }
-              });
             }
           }
 
@@ -370,20 +360,10 @@ export default function App() {
         setIsLoading(false);
       });
 
-      // Meta Pixel & GTM InitiateCheckout Tracking
+      // Meta Pixel InitiateCheckout Tracking
       if (typeof window !== 'undefined') {
         if (window.fbq) {
           window.fbq('track', 'InitiateCheckout', { currency: 'INR', value: 49.00 });
-        }
-        if (window.dataLayer) {
-          window.dataLayer.push({
-            event: 'begin_checkout',
-            ecommerce: {
-              currency: 'INR',
-              value: 49.00,
-              items: [{ item_name: 'Spoken English Workshop', price: 49.00, quantity: 1 }]
-            }
-          });
         }
       }
 
