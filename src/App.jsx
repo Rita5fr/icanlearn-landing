@@ -62,9 +62,9 @@ const translations = {
     hostQuote: "I've seen people transform their entire personality just by learning to speak English the RIGHT way. I want to show you exactly how you can do it too.",
     testHeading: "Real Students. Real Results.",
     testimonials: [
-      { quote: "Before ICANLEARN, I couldn't even introduce myself in English. Today I give presentations at work. Zainab Ma'am changed my professional life completely.", name: "Rahul Sharma", city: "Delhi" },
-      { quote: "I spent ₹10,000+ on other courses. Nothing worked. One simple session with Zainab Ma'am gave me more clarity than 6 months of expensive coaching.", name: "Priya Patel", city: "Mumbai" },
-      { quote: "My friends can't believe how confidently I speak English now. I used to be so shy in social gatherings. Best decision I ever made.", name: "Vikram Singh", city: "Jaipur" }
+      { quote: "Before ICANLEARN, I couldn't even introduce myself in English. Today I give presentations at work. Zainab Ma'am changed my professional life completely.", name: "Nitin Sharma", city: "Delhi" },
+      { quote: "I spent ₹10,000+ on other courses. Nothing worked. One simple session with Zainab Ma'am gave me more clarity than 6 months of expensive coaching.", name: "Juhee Makwana", city: "USA" },
+      { quote: "My friends can't believe how confidently I speak English now. I used to be so shy in social gatherings. Best decision I ever made.", name: "Bhupender Singh", city: "Jaipur" }
     ],
     whoHeading: "This Workshop is For You If...",
     whoPoints: [
@@ -144,9 +144,9 @@ const translations = {
     hostQuote: "मैंने लोगों को सिर्फ सही तरीके से English बोलना सीखकर अपनी पूरी personality बदलते देखा है। मैं आपको exactly यही दिखाना चाहती हूँ कि आप भी ये कैसे कर सकते हैं।",
     testHeading: "Real Students. Real Results.",
     testimonials: [
-      { quote: "ICANLEARN से पहले, मैं English में खुद को introduce भी नहीं कर पाता था। आज मैं office में presentations देता हूँ। Zainab Ma'am ने मेरी professional life पूरी तरह बदल दी।", name: "Rahul Sharma", city: "Delhi" },
-      { quote: "मैंने दूसरे courses पर ₹10,000+ खर्च किए। कुछ काम नहीं आया। Zainab Ma'am के एक simple session ने मुझे 6 महीने की expensive coaching से ज्यादा clarity दी।", name: "Priya Patel", city: "Mumbai" },
-      { quote: "मेरे friends को यकीन नहीं होता कि मैं अब कितनी confidently English बोलता हूँ। मैं social gatherings में बहुत shy हुआ करता था। Best decision I ever made.", name: "Vikram Singh", city: "Jaipur" }
+      { quote: "ICANLEARN से पहले, मैं English में खुद को introduce भी नहीं कर पाता था। आज मैं office में presentations देता हूँ। Zainab Ma'am ने मेरी professional life पूरी तरह बदल दी।", name: "Nitin Sharma", city: "Delhi" },
+      { quote: "मैंने दूसरे courses पर ₹10,000+ खर्च किए। कुछ काम नहीं आया। Zainab Ma'am के एक simple session ने मुझे 6 महीने की expensive coaching से ज्यादा clarity दी।", name: "Juhee Makwana", city: "USA" },
+      { quote: "मेरे friends को यकीन नहीं होता कि मैं अब कितनी confidently English बोलता हूँ। मैं social gatherings में बहुत shy हुआ करता था। Best decision I ever made.", name: "Bhupender Singh", city: "Jaipur" }
     ],
     whoHeading: "यह Workshop आपके लिए है अगर...",
     whoPoints: [
@@ -653,7 +653,7 @@ export default function App() {
                 </div>
                 <p className="text-slate-300 text-lg italic flex-grow mb-8 leading-relaxed">"{test.quote}"</p>
                 <div className="flex items-center gap-4 pt-6 border-t border-white/10">
-                  <img src={`https://images.unsplash.com/photo-${idx === 0 ? '1507003211169-0a1dd7228f2d' : idx === 1 ? '1438761681033-6461ffad8d80' : '1500648767791-00dcc994a43e'}?auto=format&fit=crop&w=100&q=80`} alt={test.name} className="w-14 h-14 rounded-full object-cover border-2 border-slate-700" />
+                  <img src={idx === 0 ? '/nitin-sharma.jpg' : idx === 1 ? '/juhee-makwana.jpg' : '/bhupender-singh.jpg'} alt={test.name} className="w-14 h-14 rounded-full object-cover border-2 border-slate-700" />
                   <div>
                     <h4 className="font-outfit font-bold text-white text-lg">{test.name}</h4>
                     <p className="text-sm text-slate-400">{test.city}</p>

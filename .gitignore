@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 .dev.vars
 .wrangler
+
+# Local MCP Severs (Do not commit)
+meta-ads-mcp/
