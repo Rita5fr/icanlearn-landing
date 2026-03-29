@@ -83,8 +83,8 @@ const translations = {
       mode: "Online (+ Offline option available)",
       investment: "₹49 only (Fully Refundable)"
     },
-    regHeading: "You've Already Wasted Enough Time Trying the Wrong Way",
-    regSub: "Spend just 2 hours and ₹49 — and finally get the clarity you've been missing. This one workshop can save you months of struggle.",
+    regHeading: "Your English Breakthrough is Just 2 Hours Away",
+    regSub: "Join 5,000+ students who took this one small step and transformed their confidence forever. 2 hours + ₹49 = a brand-new you.",
     formLabels: { name: "Full Name", phone: "WhatsApp Number", email: "Email Address" },
     formBtn: "Pay ₹49 and Reserve My Seat Now",
     formSecure: "100% Secure Encrypted Payment",
@@ -165,8 +165,8 @@ const translations = {
       mode: "Online (+ Offline option available)",
       investment: "सिर्फ ₹49 (100% Refundable)"
     },
-    regHeading: "आप गलत तरीके try करके पहले ही काफी Time Waste कर चुके हैं",
-    regSub: "सिर्फ 2 Hours और ₹49 invest करें — और finally वो clarity पाएं जो missing थी। यह एक Workshop आपके महीनों का struggle बचा सकता है।",
+    regHeading: "आपकी English Breakthrough बस 2 Hours दूर है",
+    regSub: "5,000+ students ने यही एक छोटा सा कदम उठाया और अपनी confidence पूरी तरह बदल ली। 2 Hours + ₹49 = एक बिल्कुल नई शुरुआत।",
     formLabels: { name: "Full Name (पूरा नाम)", phone: "WhatsApp Number", email: "Email Address" },
     formBtn: "₹49 Pay करें और अपनी Seat Reserve करें",
     formSecure: "100% Secure Encrypted Payment",
